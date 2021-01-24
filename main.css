@@ -1,0 +1,491 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+button {
+    font-family: 'Bungee', cursive;
+    width: 120px;
+    height: 120px;
+    color: transparent;
+}
+
+button:hover {
+    transform: scale(1.1, 1.1);
+    color: #a24c3d;
+}
+    
+button:active {
+    transform: translateY(4px)
+}
+
+#opening {
+    /* border: 1px solid sandybrown; */
+    width: 960px;
+    height: 580px;
+    margin: 0;
+    background-image: url("./img/opencropmore.jpeg");
+    background-size: cover;
+    background-position: left;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #174658;
+    
+    background-repeat: repeat-x;
+    /* animation-delay: 2s; */
+    animation: animatedBackground 5s linear infinite alternate;
+}
+
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+
+#opening > h1 {
+    font-family: 'Bungee Shade', cursive;
+    /* color: #174658; */
+    animation: animatedTitle 0.5s infinite;
+}
+
+@keyframes animatedTitle {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1.05, 1.05);
+    }
+  }
+
+#opening > h2 {
+    font-family: 'Bungee', cursive;
+    margin-top: -3px;
+}
+
+#opening > p {
+    background-color: #f9e1b3;
+    margin-top: -3px;
+}
+
+#playbutton {
+    background-image: url("./img/skillet.png");
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    width: 180px;
+    height: 180px;
+    font-size: 30px;
+    color: #f9e1b3;
+}
+
+#recipescreen {
+    position: relative;
+    width: 960px;
+    height: 590px;
+    /* border: 1px solid cornflowerblue; */
+    margin-bottom: 5px;
+    background-image: url("./img/recipe.png");
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: no;
+}
+
+#recipescreentitle {
+    /* border: 1px solid salmon; */
+    position: absolute;
+    top: 10%;
+    width: 70%;
+    left: 20%;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    justify-items: center; */
+}
+
+.recipes {
+    /* border: 1px solid cornflowerblue; */
+    position: absolute;
+    top: 43%;
+    left: 15.5%;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.recipes h4 {
+    margin-bottom: -2px;
+    font-family: 'Mogra', cursive;
+}
+
+.recipes p {
+    margin-bottom: -4px;
+}
+
+.recipes div {
+    /* border: 1px solid salmon; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#startbutton {
+    background-image: url("./img/pastaball.png");
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+#gameplay {
+    width: 960px;
+    height: 580px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./img/kitchen.png");
+    background-size: cover;
+    background-position: left;
+    position: relative;
+}
+
+#tophalf {
+    display: flex;
+    width: 100%;
+    height: 47%;
+    flex-direction: row;
+    align-items: center;
+}
+
+#gamestats {
+    width: 35%;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+#leveltext {
+    font-family: 'Bungee', cursive;
+}
+
+
+#window {
+    width: 65%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#orders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#windowcustomer {
+height: 175px;
+width: auto;
+}
+
+#currentorder {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+#hint {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: auto;
+    border: 3px dashed #174658;
+    border-radius: 25px;
+    background-color: #e8fdf6;
+    padding-left: 20px;
+}
+
+#hint > p {
+    margin-bottom: -7px;
+}
+
+#hintbutton {
+    width: 10%;
+    height: 40%;
+    background-image: url("./img/hint.png");
+    background-color: transparent;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    padding-right: 3px;
+    position: absolute;
+    right: 2%;
+    top: 0%;
+}
+
+#closehintbutton {
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+    width: 60px;
+    height: 30px;
+    color: #a24c3d;
+}
+
+#exit {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#help {
+    position: absolute;
+    width: 52%;
+    height: auto;
+    top: 35%;
+    left: 23%;
+    padding-left: 15px;
+    border: 3px dashed #174658;
+    border-radius: 25px;
+    background-color: #e8fdf6;
+}
+
+#help > h2 {
+    font-family: 'Bungee', cursive;
+}
+
+#helpbutton {
+    background-image: url("./img/help.png");
+    background-color: transparent;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+#closehelpbutton {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 60px;
+    height: 30px;
+    color: #a24c3d;
+}
+
+.endgamebutton {
+    background-image: url("./img/endgame.png");
+    background-color: transparent;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    border: none;
+    color: transparent;
+}
+
+#kitchen {
+    height: 53%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: #d6dadd;
+}
+
+#ingredientszone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    height: 25%;
+    width: 100%;
+}    
+
+.ingredients {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    color: transparent;
+    font-size: xx-small;
+}
+
+#spaghetti {
+    background-image: url("./img/pastaball.png");
+}
+
+#mushroom {
+    background-image: url("./img/mushroom.png");
+}
+
+#pancetta {
+    background-image: url("./img/pancetta.png");
+}
+
+#egg {
+    background-image: url("./img/egg.png");
+}
+
+#parmesan {
+    background-image: url("./img/cheese.png");
+}
+
+#meatball {
+    background-image: url("./img/meatballs.png");
+}
+
+#tomatosauce {
+    background-image: url("./img/tomatosauce.png");
+}
+
+#pesto {
+    background-image: url("./img/pesto.png");
+}
+
+#bottomhalf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 75%;
+    width: 100%
+}
+
+#stovetop {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#stovetop > img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+#cookingcloud {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cookingcloud > img {
+    width: 80%;
+    height: auto;
+}
+
+.popup {
+position: absolute;
+width: 25%;
+top: 35%;
+height: 30%;
+left: 38%;
+border: 3px dashed #174658;
+background-color: #e8fdf6;
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.popup > img {
+height: 60%;
+width: auto;
+}
+
+#toggles {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#removebutton {
+    height: 45%;
+    background-image: url("./img/trash.png");
+    background-color: transparent;
+    background-position: center;
+    background-size: 78%;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+#submitbutton {
+    height: 45%;
+    background-image: url("./img/submitbutton.png");
+    background-color: transparent;
+    background-position: center;
+    background-size: 78%;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.gameend {
+    width: 960px;
+    height: 580px;
+    margin: 0;
+    background-image: url("./img/opencropmore.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameend > h1 {
+    font-family: 'Bungee', cursive;
+}
+
+.gameend > p {
+    background-color: #f9e1b3;
+}
+
+#gameendtoggles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.playagainbutton {
+    background-image: url("./img/playagain.png");
+    background-color: transparent;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    border: none;
+}

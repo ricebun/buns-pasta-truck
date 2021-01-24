@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Bun's Pasta Truck</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mogra&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <script src="index.js"
+        charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="openingandcredit">
+        <div id="opening">
+            <h1>Bun's Pasta Truck</h1>
+            <h2>Welcome!</h2>
+            <p>It's food truck season but Bun
+                broke his arm. <br>Help him serve
+                them hungry customers!!</p>
+            <button id="playbutton">Play</button>
+        </div>
+        <h6><a
+                href="https://www.freepik.com/vectors/food">Food
+                vector created by pch.vector -
+                www.freepik.com</a></h6>
+    </div>
+
+    <div id="recipescreen">
+        <div id="recipescreentitle">
+            <h3>Grandma Bun's Recipes</h3>
+            <p>
+                As a little boy, Bun spent many
+                weekend afternoons making pasta
+                with Grandma Bun. Now, Bun makes
+                his
+                pasta with Grandma Bun's secret
+                recipes and everyone flocks to
+                Bun's Pasta Truck for a taste of
+                it.
+                <br><br>Learn these by heart so
+                you can be as good as Bun!
+                Get
+                to
+                work once you're ready!
+            </p>
+        </div>
+        <div class="recipes">
+            <div id="pestospaghettirecipe">
+                <h4>Pesto Spaghetti</h4>
+                <p>Spaghetti</p>
+                <p>Pesto</p>
+            </div>
+
+            <div id="meatballmarinararecipe">
+                <h4>Meatball Marinara</h4>
+                <p>Spaghetti</p>
+                <p>Meatballs</p>
+                <p>Tomato Sauce</p>
+            </div>
+
+            <div id="carbonarecipe">
+                <h4>Carbonara</h4>
+                <p>Spaghetti</p>
+                <p>Pancetta</p>
+                <p>Parmesan</p>
+                <p>Egg</p>
+            </div>
+
+            <div id="alfunghirecipe">
+                <h4>Al Funghi</h4>
+                <p>Spaghetti</p>
+                <p>Mushroom</p>
+            </div>
+
+            <div id="cheesytomatorecipe">
+                <h4>Cheesy Tomato Spaghetti</h4>
+                <p>Spaghetti</p>
+                <p>Cheese</p>
+                <p>Tomato Sauce</p>
+            </div>
+        </div>
+        <button id="startbutton">START</button>
+    </div>
+
+    <div id="gameplay">
+        <div id="tophalf">
+            <div id="gamestats">
+                <div id="leveltext">LEVEL <span
+                        id="level"></span></div>
+                <div>Timer: <span
+                        id="timer"></span></div>
+                <div>Lives: <span
+                        id="lives"></span></div>
+                <div>Score: <span
+                        id="score"></span></div>
+                <div>Orders Completed: <span
+                        id="orderscompleted"></span>
+                </div>
+            </div>
+
+            <div id="window">
+                <div id="orders">
+                    <p id="currentorder"></p>
+                </div>
+                <div id="hint">
+                    <div id="hintlist"></div>
+                    <button
+                        id="closehintbutton">Close</button>
+                </div>
+                <button
+                    id="hintbutton">Hint</button>
+            </div>
+
+            <div id="exit">
+                <button
+                    id="helpbutton">Help</button>
+                <button class="endgamebutton">End
+                    Game</button>
+            </div>
+        </div>
+
+        <div id="kitchen">
+            <div id="ingredientszone">
+                <button class="ingredients"
+                    id="spaghetti">Spaghetti</button>
+                <button class="ingredients"
+                    id="mushroom">Mushroom</button>
+                <button class="ingredients"
+                    id="pancetta">Pancetta</button>
+                <button class="ingredients"
+                    id="egg">Egg</button>
+                <button class="ingredients"
+                    id="parmesan">Parmesan</button>
+                <button class="ingredients"
+                    id="meatball">Meatballs</button>
+                <button class="ingredients"
+                    id="tomatosauce">Tomato
+                    Sauce</button>
+                <button class="ingredients"
+                    id="pesto">Pesto</button>
+            </div>
+
+            <div id="bottomhalf">
+                <div id="stovetop"></div>
+                <div id="cookingcloud">
+                    <img
+                        src="./img2/cookingcloud.png">
+                </div>
+                <div id="toggles">
+                    <button
+                        id="removebutton">Remove</button>
+                    <button id="submitbutton">Cook
+                        and serve</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="help">
+            <h2>How to Play</h2>
+            <p>1. Click on the ingredients to
+                assemble the order</p>
+            <p>2. Pick the ingredients in the same
+                order as the recipe for a more
+                delicious dish!</p>
+            <p>3. Once you have all the
+                ingredients, cook and serve</p>
+            <p>4. Get a hint if you're stuck, but
+                remember, you can only peep once!
+            </p>
+            <p>5. Do well to level up :)</p>
+            <button
+                id="closehelpbutton">Close</button>
+        </div>
+        <div class="popup" id="wrongorder">
+            <img src="./img2/wrongorder.png">
+        </div>
+        <div class="popup" id="rightorder"><img
+                src="./img2/rightorder.png"></div>
+    </div>
+
+    <div class="gameend" id="gameover">
+        <h1>Game Over!</h1>
+        <p id="gameoverstats"></p>
+        <div id="gameendtoggles">
+            <button class="playagainbutton">Play
+                again</button>
+            <button class="endgamebutton">End
+                Game</button>
+        </div>
+    </div>
+
+    <div class="gameend" id="levelup">
+        <h1>Level Up!</h1>
+    </div>
+
+    <div class="gameend" id="gamecomplete">
+        <h1>You are amazing!</h1>
+        <p>
+            Food truck season is finally winding
+            down..<br> Bun is so lucky to have
+            found such a capable assistant.
+            <br>See you next season!
+        </p>
+        <div id="gameendtoggles">
+            <button class="playagainbutton">Play
+                again</button>
+            <button class="endgamebutton">End
+                Game</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
